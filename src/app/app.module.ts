@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CourseComponent } from './course/course.component';
 import { TableComponent } from './table/table.component';
 import { AddClassOnConditionComponent } from './add-class-on-condition/add-class-on-condition.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { AddClassOnConditionComponent } from './add-class-on-condition/add-class
     AppComponent,
     CourseComponent,
     TableComponent,
-    AddClassOnConditionComponent
+    AddClassOnConditionComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule
