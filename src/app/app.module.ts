@@ -8,6 +8,7 @@ import { CourseComponent } from './course/course.component';
 import { TableComponent } from './table/table.component';
 import { AddClassOnConditionComponent } from './add-class-on-condition/add-class-on-condition.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { EventFilteringComponent } from './event-filtering/event-filtering.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     CourseComponent,
     TableComponent,
     AddClassOnConditionComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    EventFilteringComponent
   ],
   imports: [
     BrowserModule
