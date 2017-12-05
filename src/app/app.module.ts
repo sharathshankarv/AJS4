@@ -1,3 +1,4 @@
+import { fUppercase } from './fUppercase.pipe';
 import { EllipsesPipe } from './Ellipses.pipe';
 import { CourseService } from './course/course.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -14,6 +15,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { EventFilteringComponent } from './event-filtering/event-filtering.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
+import { FirstLetterUppercasePipeComponent } from './first-letter-uppercase-pipe/first-letter-uppercase-pipe.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
     EventFilteringComponent,
     TwoWayBindingComponent,
     CustomPipesComponent,
-    EllipsesPipe
+    EllipsesPipe,
+    FirstLetterUppercasePipeComponent,
+    fUppercase
   ],
   imports: [
     BrowserModule,
