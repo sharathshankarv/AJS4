@@ -16,6 +16,8 @@ import { EventFilteringComponent } from './event-filtering/event-filtering.compo
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { FirstLetterUppercasePipeComponent } from './first-letter-uppercase-pipe/first-letter-uppercase-pipe.component';
+import { ReusableComponent } from './reusable/reusable.component';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { FirstLetterUppercasePipeComponent } from './first-letter-uppercase-pipe
     CustomPipesComponent,
     EllipsesPipe,
     FirstLetterUppercasePipeComponent,
-    fUppercase
+    fUppercase,
+    ReusableComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,

@@ -9,4 +9,5 @@
 
 <!-- <app-two-way-binding></app-two-way-binding> -->
 <!-- <app-custom-pipes></app-custom-pipes> -->
-<app-first-letter-uppercase-pipe></app-first-letter-uppercase-pipe>
+<!-- <app-first-letter-uppercase-pipe></app-first-letter-uppercase-pipe> -->
+<app-favorite [is-Favorite]="post.isFavorite" (change)="onFavChange($event)"></app-favorite>
