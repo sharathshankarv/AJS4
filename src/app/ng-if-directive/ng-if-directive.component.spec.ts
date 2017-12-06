@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReusableComponent } from './reusable.component';
+import { NgIfDirectiveComponent } from './ng-if-directive.component';
 
-describe('ReusableComponent', () => {
-  let component: ReusableComponent;
-  let fixture: ComponentFixture<ReusableComponent>;
+describe('NgIfDirectiveComponent', () => {
+  let component: NgIfDirectiveComponent;
+  let fixture: ComponentFixture<NgIfDirectiveComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ReusableComponent ]
+      declarations: [ NgIfDirectiveComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ReusableComponent);
+    fixture = TestBed.createComponent(NgIfDirectiveComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

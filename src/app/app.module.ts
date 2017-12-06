@@ -16,8 +16,9 @@ import { EventFilteringComponent } from './event-filtering/event-filtering.compo
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { CustomPipesComponent } from './custom-pipes/custom-pipes.component';
 import { FirstLetterUppercasePipeComponent } from './first-letter-uppercase-pipe/first-letter-uppercase-pipe.component';
-import { ReusableComponent } from './reusable/reusable.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
+import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
 
 
 @NgModule({
@@ -32,9 +33,10 @@ import { FavoriteComponent } from './favorite/favorite.component';
     CustomPipesComponent,
     EllipsesPipe,
     FirstLetterUppercasePipeComponent,
-    fUppercase,
-    ReusableComponent,
-    FavoriteComponent
+    fUppercase,    
+    FavoriteComponent,
+    NgIfDirectiveComponent,
+    NgSwitchDirectiveComponent
   ],
   imports: [
     BrowserModule,

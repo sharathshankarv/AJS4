@@ -1,0 +1,9 @@
+<ul class="nav nav-pills">
+    <li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">Map View</a></li>
+    <li [class.active]="viewMode == 'tree'"><a (click)="viewMode = 'tree'">Tree View</a></li>
+</ul>
+
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map' "> Map mode</div>
+    <div *ngSwitchCase="'tree'"> tree mode</div>
+</div>
