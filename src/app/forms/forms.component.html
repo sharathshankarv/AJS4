@@ -1,0 +1,43 @@
+<form #logFrm="ngForm" name="logFrm" (submit)="frmSubmit(logFrm)">
+    <!-- <div class="alert alert-danger" *ngIf="logFrm.untouched && logFrm.invalid">Please fill All madatory Feilds</div> -->
+    <div ngModelGroup="loginInfo">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input ngModel 
+              name="username" 
+              #username="ngModel" 
+              minlength="3" 
+              maxlength="8" 
+              id="username" 
+              type="text" 
+              class="form-control" required>
+      
+            <div class="alert alert-danger" *ngIf="username.touched && !username.valid">
+              <span *ngIf="username.errors.required">username is required</span>
+              <span *ngIf="username.errors.minlength">minlength of username is {{username.errors.minlength.requiredLength}} letters</span>
+              <span *ngIf="username.errors.maxlength">minlength of username is {{username.errors.maxlength}} letters</span>
+            </div>      
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input ngModel 
+            name="password" 
+            id="password" 
+            type="password" 
+            class="form-control" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>how you expect us to contact</label>
+        <select class="form-control" ngModel name="contactModes" >
+          <option value="">Please Select</option>
+          <option *ngFor="let mode of contactMode" [ngValue]="mode">{{mode.name}}</option>
+        </select>
+      </div>
+      <div class="form-group" *ngFor="let mode of contactMode">
+        <label><input type="radio" ngModel name="contactModesRadio" [value]="mode.id">{{mode.name}}</label>
+      </div>
+    
+    <p>{{ logFrm.value | json }}</p>
+    <button [disabled]="!logFrm.valid" class="btn btn-success">Save</button>
+</form>

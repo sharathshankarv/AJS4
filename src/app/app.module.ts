@@ -20,6 +20,10 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
 import { SafeTraversalOpComponent } from './safe-traversal-op/safe-traversal-op.component';
+import { CustomDDirective } from './custom-d.directive';
+import { CustomDirectiveImplementationComponent } from './custom-directive-implementation/custom-directive-implementation.component';
+import { CreditCardValidationDirective } from './credit-card-validation.directive';
+import { FormsComponent } from './forms/forms.component';
 
 
 @NgModule({
@@ -38,7 +42,11 @@ import { SafeTraversalOpComponent } from './safe-traversal-op/safe-traversal-op.
     FavoriteComponent,
     NgIfDirectiveComponent,
     NgSwitchDirectiveComponent,
-    SafeTraversalOpComponent
+    SafeTraversalOpComponent,
+    CustomDDirective,
+    CustomDirectiveImplementationComponent,
+    CreditCardValidationDirective,
+    FormsComponent
   ],
   imports: [
     BrowserModule,
