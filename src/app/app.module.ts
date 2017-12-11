@@ -19,6 +19,7 @@ import { FirstLetterUppercasePipeComponent } from './first-letter-uppercase-pipe
 import { FavoriteComponent } from './favorite/favorite.component';
 import { NgIfDirectiveComponent } from './ng-if-directive/ng-if-directive.component';
 import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-directive.component';
+import { SafeTraversalOpComponent } from './safe-traversal-op/safe-traversal-op.component';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { NgSwitchDirectiveComponent } from './ng-switch-directive/ng-switch-dire
     fUppercase,    
     FavoriteComponent,
     NgIfDirectiveComponent,
-    NgSwitchDirectiveComponent
+    NgSwitchDirectiveComponent,
+    SafeTraversalOpComponent
   ],
   imports: [
     BrowserModule,
