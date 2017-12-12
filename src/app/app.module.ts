@@ -1,8 +1,9 @@
+import { SignupFormComponent } from './signup-form/signup-form.component';
 import { fUppercase } from './fUppercase.pipe';
 import { EllipsesPipe } from './Ellipses.pipe';
 import { CourseService } from './course/course.service';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 import { NgModule } from '@angular/core';
 
 
@@ -29,6 +30,7 @@ import { FormsComponent } from './forms/forms.component';
 @NgModule({
   declarations: [
     AppComponent,
+    SignupFormComponent,
     CourseComponent,
     TableComponent,
     AddClassOnConditionComponent,
@@ -50,7 +52,8 @@ import { FormsComponent } from './forms/forms.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     CourseService
