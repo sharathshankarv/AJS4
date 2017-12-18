@@ -22,6 +22,12 @@ export class SignupFormComponent {
                Validators.required,) 
   })
 
+  login(){
+    this.form.setErrors({
+      invalidLogin: true
+    });
+  }
+
   get username(){
     return this.form.get('username');
   }
