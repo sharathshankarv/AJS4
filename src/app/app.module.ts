@@ -1,3 +1,4 @@
+import { HttpModule } from "@angular/http";
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { fUppercase } from './fUppercase.pipe';
 import { EllipsesPipe } from './Ellipses.pipe';
@@ -25,6 +26,7 @@ import { CustomDDirective } from './custom-d.directive';
 import { CustomDirectiveImplementationComponent } from './custom-directive-implementation/custom-directive-implementation.component';
 import { CreditCardValidationDirective } from './credit-card-validation.directive';
 import { FormsComponent } from './forms/forms.component';
+import { ConsumingHttpComponent } from './consuming-http/consuming-http.component';
 
 
 @NgModule({
@@ -48,12 +50,15 @@ import { FormsComponent } from './forms/forms.component';
     CustomDDirective,
     CustomDirectiveImplementationComponent,
     CreditCardValidationDirective,
-    FormsComponent
+    FormsComponent,
+    ConsumingHttpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpModule
+    
   ],
   providers: [
     CourseService
