@@ -27,6 +27,7 @@ import { CustomDirectiveImplementationComponent } from './custom-directive-imple
 import { CreditCardValidationDirective } from './credit-card-validation.directive';
 import { FormsComponent } from './forms/forms.component';
 import { ConsumingHttpComponent } from './consuming-http/consuming-http.component';
+import { ConsumeHttpPostComponent } from './consume-http-post/consume-http-post.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { ConsumingHttpComponent } from './consuming-http/consuming-http.componen
     CustomDirectiveImplementationComponent,
     CreditCardValidationDirective,
     FormsComponent,
-    ConsumingHttpComponent
+    ConsumingHttpComponent,
+    ConsumeHttpPostComponent
   ],
   imports: [
     BrowserModule,
