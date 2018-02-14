@@ -1,3 +1,5 @@
+import { AppErrorHandler } from './common/app-error-hadler';
+import { ServicesOfCurdHttpService } from './services/services-of-curd-http.service';
 import { HttpModule } from "@angular/http";
 import { SignupFormComponent } from './signup-form/signup-form.component';
 import { fUppercase } from './fUppercase.pipe';
@@ -5,7 +7,7 @@ import { EllipsesPipe } from './Ellipses.pipe';
 import { CourseService } from './course/course.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 
 
 
@@ -63,7 +65,9 @@ import { ConsumeHttpPostComponent } from './consume-http-post/consume-http-post.
     
   ],
   providers: [
-    CourseService
+    CourseService,
+    ServicesOfCurdHttpService,
+    {provide: ErrorHandler, useClass:AppErrorHandler }
   ],
   bootstrap: [AppComponent]
 })
